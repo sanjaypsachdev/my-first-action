@@ -1,7 +1,7 @@
 name: first
 on: push
 jobs:
-- job1:
+  job1:
     name: First Job
     runs-on: ubuntu-latest
     steps:
@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@v4.2.2
     - name: Step two
       run: env | sort
-- job2:
+  job2:
     name: Second Job
     runs-on: windows-latest
     steps:
