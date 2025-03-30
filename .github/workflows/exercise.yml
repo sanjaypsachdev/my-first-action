@@ -5,7 +5,8 @@ jobs:
     name: Clone repo and print content of test-file
     runs-on: [ubuntu-latest]
     steps:
-    - uses: actions/checkout@4
+    - name: checkout repo
+      uses: actions/checkout@v4.2.2
     - name: print the content of test-file
       run: |
         cat test-file
